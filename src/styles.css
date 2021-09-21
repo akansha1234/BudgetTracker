@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #08070e;
+  color: lightgray;
+}
+#app {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: none;
+}
+
+h3 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  max-width: 100%;
+}
+.result1 {
+  max-width: 100%;
+  width: 400px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    82.8deg,
+    rgba(182, 109, 238, 0.966) -0.1%,
+    rgba(96, 20, 238, 1) 97.7%
+  );
+}
+.balance {
+  text-align: left;
+  padding: 20px 20px;
+}
+.result {
+  font-size: 23px;
+  font-weight: bold;
+}
+.spend,
+.profit {
+  font-weight: bold;
+}
+.result2 {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.choose-options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+  margin: 10px auto;
+}
+.choose-options button {
+  background: none;
+  border: none;
+  outline: none;
+  color: lightgray;
+}
+.choose-options button:active {
+  color: #9829ec !important;
+}
+.choose-options button:focus {
+  color: #9829ec;
+}
+.active {
+  color: #9829ec;
+}
+.expense-result,
+.income-result {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  margin: 5px auto;
+  padding: 5px;
+}
+.fa {
+  padding: 10px;
+  border-radius: 50%;
+}
+.fa-automobile {
+  background-color: #5b13e2;
+  /* background-color: lightgrey; */
+}
+.fa-inr {
+  background-color: #76448a;
+  width: 40px;
+}
+.desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+}
+.desc p {
+  font-weight: bold;
+}
+
+.add-expenses,
+.add-income {
+  margin-top: 3%;
+  text-align: center;
+  display: inline-block;
+}
+.heading {
+  margin-left: 12px;
+  font-size: 18px;
+}
+.modal-body {
+  display: flex;
+  justify-content: space-evenly;
+}
+div .fadeIn {
+  opacity: 1;
+  display: block;
+  pointer-events: all;
+}
+div .fadeOut {
+  /* opacity: 0; */
+  display: none;
+  pointer-events: none;
+}
+.fa {
+  font-size: 24px;
+}
+.track-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.track {
+  width: 200px;
+  height: 50px;
+  color: white;
+  border: none;
+  outline: none;
+  background: #846df5;
+  font-weight: bold;
+}
+.modal {
+  background: black;
+}
+.modal-content {
+  background: #08070e;
+  color: white;
+  border: 1px solid white;
+}
+.modal-backdrop {
+  z-index: -1;
+}
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-footer {
+  border-top: 0 none;
+}
+#dropdown-item,
+.input-expense,
+.input-income {
+  background: black;
+  color: white;
+  border: white;
+  outline: white;
+}
+.save,
+.save1 {
+  background-color: #9829ec;
+  color: white;
+}
+@media only screen and (min-width: 280px) and (max-width: 300px) {
+  .result1 {
+    max-width: 100%;
+    width: 280px;
+    margin: 0px auto;
+  }
+  .expense-result {
+    max-width: 100%;
+    width: 280px;
+  }
+  .modal-dialog {
+    margin-left: 60px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+  .result1 {
+    max-width: 100%;
+    width: 320px;
+    transform: translate(12px, 12px);
+    margin: 10px auto;
+  }
+  .expense-result {
+    max-width: 100%;
+    width: 320px;
+  }
+  .income-result {
+    max-width: 100%;
+    width: 320px;
+  }
+}
+
+@media only screen and (width: 375px) {
+  .result1 {
+    max-width: 100%;
+    width: 320px;
+    transform: translate(10px, 12px);
+    margin: 10px auto;
+  }
+  .expense-result {
+    max-width: 100%;
+    width: 320px;
+  }
+  .income-result {
+    max-width: 100%;
+    width: 320px;
+  }
+}
